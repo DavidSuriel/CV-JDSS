@@ -16,6 +16,15 @@ body
     min-height: 100vh;
 }
 
+.box h4::before {
+    content: '• '; 
+    color: black; 
+}
+
+.text h4::before {
+    content: ''; 
+}
+
 .container
 {
     position: relative;
