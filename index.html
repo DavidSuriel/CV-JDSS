@@ -1,202 +1,294 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum-JDSS</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV — José David Sánchez Suriel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div class="container">
-       <div class="left_side">
-          <div class="profileText">
-              <div class="imgBx">
-                  <img src="img.jpg">
+
+  <nav class="toolbar" aria-label="Opciones">
+    <div class="lang" role="group" aria-label="Idioma / Langue / Língua / Language">
+      <button type="button" data-set-lang="es" aria-pressed="true">ES</button>
+      <button type="button" data-set-lang="fr" aria-pressed="false">FR</button>
+      <button type="button" data-set-lang="pt" aria-pressed="false">PT</button>
+      <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <button type="button" class="download" id="download">
+      <span data-l="es">Descargar PDF</span><span data-l="fr">Télécharger PDF</span><span data-l="pt">Baixar PDF</span><span data-l="en">Download PDF</span>
+      <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 2v9m0 0L4.5 7.5M8 11l3.5-3.5M3 14h10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
+    </button>
+  </nav>
+
+  <main class="sheet">
+
+    <header class="masthead">
+      <div class="who">
+        <p class="kicker">
+          Curriculum vitae
+          <span class="dot">·</span> Santo Domingo, RD
+        </p>
+        <h1>José David<br><em>Sánchez Suriel</em></h1>
+        <p class="role">
+          <span data-l="es">Ingeniero de software — Desarrollador web full stack</span>
+          <span data-l="fr">Ingénieur logiciel — Développeur web full stack</span><span data-l="pt">Engenheiro de software — Desenvolvedor web full stack</span>
+          <span data-l="en">Software engineer — Full stack web developer</span>
+        </p>
+      </div>
+      <figure class="photo">
+        <img src="foto.png" alt="José David Sánchez Suriel">
+      </figure>
+    </header>
+
+    <ul class="contact">
+      <li><a href="mailto:deidavel_62@outlook.com">deidavel_62@outlook.com</a></li>
+      <li><span class="k" data-l="es">Tel.</span><span class="k" data-l="fr">Tél.</span><span class="k" data-l="pt">Tel.</span><span class="k" data-l="en">Phone</span> <a href="tel:+18097281432">809-728-1432</a></li>
+      <li><span class="k">WhatsApp</span> <a href="https://wa.me/18494533080">849-453-3080</a></li>
+      <li><a href="https://github.com/DavidSuriel" target="_blank" rel="noopener">github.com/DavidSuriel</a></li>
+      <li><a href="https://www.linkedin.com/in/josé-david-sánchez-suriel-55776b196" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+
+    <div class="grid">
+
+      <div class="main">
+
+        <section>
+          <h2 class="sec"><span class="n">01</span><span data-l="es">Perfil</span><span data-l="fr">Profil</span><span data-l="pt">Perfil</span><span data-l="en">Profile</span></h2>
+          <p class="lede" data-l="es">
+            Ingeniero de software egresado de la Universidad APEC. Desarrollo aplicaciones web de punta a punta —interfaces en React y TypeScript, APIs en C# y Node.js, bases de datos SQL— y tengo base sólida en sistemas operativos y su seguridad.
+          </p>
+          <p class="lede" data-l="fr">
+            Ingénieur logiciel diplômé de l'Universidad APEC. Je développe des applications web de bout en bout — interfaces React et TypeScript, API en C# et Node.js, bases de données SQL — avec de solides bases en systèmes d'exploitation et en sécurité.
+          </p>
+          <p class="lede" data-l="pt">
+            Engenheiro de software formado pela Universidad APEC. Desenvolvo aplicações web de ponta a ponta — interfaces em React e TypeScript, APIs em C# e Node.js, bancos de dados SQL — com uma base sólida em sistemas operacionais e sua segurança.
+          </p>
+          <p class="lede" data-l="en">
+            Software engineer, graduated from Universidad APEC. I build web applications end to end—React and TypeScript interfaces, C# and Node.js APIs, SQL databases—with a solid grounding in operating systems and their security.
+          </p>
+          <p data-l="es">
+            Busco aplicar lo que sé en un rol donde pueda aportar de forma concreta al desarrollo y la rentabilidad de la empresa, mientras sigo creciendo personal y profesionalmente.
+          </p>
+          <p data-l="fr">
+            Je recherche un poste où je pourrai contribuer concrètement au développement et à la rentabilité de l'entreprise, tout en continuant à progresser sur le plan personnel et professionnel.
+          </p>
+          <p data-l="pt">
+            Busco uma função em que eu possa contribuir de forma concreta para o desenvolvimento e a rentabilidade da empresa, enquanto continuo crescendo pessoal e profissionalmente.
+          </p>
+          <p data-l="en">
+            I'm looking for a role where I can make a concrete contribution to the company's growth and profitability while I keep growing personally and professionally.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="sec"><span class="n">02</span><span data-l="es">Experiencia</span><span data-l="fr">Expérience</span><span data-l="pt">Experiência</span><span data-l="en">Experience</span>
+            <span class="aside-note">git log --oneline</span>
+          </h2>
+
+          <ol class="log">
+            <li class="entry head">
+              <div class="meta">
+                <span class="ver">v3.0</span>
+                <span class="date">2024 — <span data-l="es">hoy</span><span data-l="fr">auj.</span><span data-l="pt">hoje</span><span data-l="en">now</span></span>
+                <span class="tag-head">HEAD</span>
               </div>
-              <h3>José David Sánchez Suriel<br><span>Ingeniería en software</span></h3>
-          </div>
-          <div class="contactInfo">
-              <h4 class="title">Contactos</h4>
-              <ul>
-                  <li>
-                      <spam class="icon"><i class="fa fa-phone" aria-hidden="true"></i></spam>
-                      <spam class="text"><a>809-728-1432</a></spam>
-                  </li>
-                  <li>
-                      <spam class="icon"><i class="fa fa-whatsapp" aria-hidden="true"></i></spam>
-                      <spam class="text">849-453-3080</spam>
-                  </li>
+              <div class="body">
+                <h3>Web Developer <span class="at">· General de Seguros</span></h3>
+                <p data-l="es">
+                  Desarrollo del proyecto GSWEB, principalmente en front-end: landing pages, página de cambio de contraseña, páginas de productos y mejoras a plantillas existentes. En back-end, implementación de APIs con patrón MVC en C#, consultando SQL Server mediante procedimientos almacenados.
+                </p>
+                <p data-l="fr">
+                  Développement du projet GSWEB, principalement en front-end : landing pages, page de changement de mot de passe, pages produits et amélioration de modèles existants. En back-end, création d'API selon le modèle MVC en C#, interrogeant SQL Server via des procédures stockées.
+                </p>
+                <p data-l="pt">
+                  Desenvolvimento do projeto GSWEB, principalmente no front-end: landing pages, página de alteração de senha, páginas de produtos e melhorias em templates existentes. No back-end, implementação de APIs com o padrão MVC em C#, consultando o SQL Server via stored procedures.
+                </p>
+                <p data-l="en">
+                  Working on the GSWEB project, mainly front-end: landing pages, the password-change page, product pages and improvements to existing templates. On the back-end, building MVC APIs in C# that query SQL Server through stored procedures.
+                </p>
+                <p data-l="es">
+                  Trabajo a diario con agentes de código con IA —Claude Code, Antigravity y ChatGPT Codex— para acelerar el desarrollo, refactorizar y revisar código, con experiencia práctica en guiarlos y validar lo que producen.
+                </p>
+                <p data-l="fr">
+                  J'utilise au quotidien des agents de code IA — Claude Code, Antigravity et ChatGPT Codex — pour accélérer le développement, refactoriser et relire le code, avec une expérience concrète dans leur pilotage et la validation de leurs résultats.
+                </p>
+                <p data-l="pt">
+                  Uso no dia a dia agentes de código com IA — Claude Code, Antigravity e ChatGPT Codex — para acelerar o desenvolvimento, refatorar e revisar código, com prática em orientá-los e validar o que produzem.
+                </p>
+                <p data-l="en">
+                  I work daily with AI coding agents—Claude Code, Antigravity and ChatGPT Codex—to speed up development, refactor and review code, with hands-on experience steering them and validating their output.
+                </p>
+                <p class="stack">React · TypeScript · Tailwind · C# · SQL Server</p>
+              </div>
+            </li>
 
-                  <li>
-                      <spam class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></spam>
-                      <spam class="text">deidavel_62@outlook.com</spam>
-                  </li>
-                  <li>
-                      <spam class="icon"><i class="fa fa-globe" aria-hidden="true"></i></spam>
-                        <a class="text" href="https://codepen.io/JDSS/full/eYyoaLe" target="_blank">Portafolio</a>
-                  </li>
-                  <li>
-                      <spam class="icon"><i class="fa fa-github" aria-hidden="true"></i></spam>
-                      <a class="text" href="https://github.com/DavidSuriel" target="_blank">Github</a>
-                  </li>
-                  <li>
-                      <spam class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></spam>
-                        <a class="text" href="https://www.linkedin.com/in/josé-david-sánchez-suriel-55776b196" target="_blank">Linkedin</a>
-                  </li>
-                  <li>
-                    <spam class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></spam>
-                      <a class="text" href="https://twitter.com/JDSS04243778" target="_blank">Twitter</a>
-                 </li>
-                 <li>
-                    <spam class="icon"><i class="fa fa-free-code-camp" aria-hidden="true"></i></i></spam>
-                      <a class="text" href="https://www.freecodecamp.org/JDSS62" target="_blank">Freecodecamp</a>
-                 </li>
-                  <li>
-                      <spam class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></spam>
-                      <spam class="text">Autopista San Isidro, Santo Domingo Este.</spam>
-                  </li>
-              </ul>
-          </div>
-          
-          <div class="contactInfo education">
-              <h4 class="title">Educación</h4>
-              <ul>
-                  <li>
-                      <h5 class="time">2018 - 2023</h5>
-                      <h4>Universitario Ingeniero en software</h4>
-                      <h4>Universidad APEC</h4>
-                  </li>
-                  <li>
-                      <h5 class="time">2016 - 2018</h5>
-                      <h4>Secundario Técnico en Electrónica</h4>
-                      <h4>Colegio Apec Fernando Arturo de Meriño(CAFAM)</h4>
-                  </li>
-                  <!-- <li>
-                      <h5 class="time">2010 - 2016</h5>
-                      <h4>Basica-Media</h4>
-                      <h4>Colegio Apec Fernando Arturo de Meriño(CAFAM)</h4>
-                  </li> -->
-              </ul>
-          </div>
-          
-          <div class="contactInfo languages">
-            <h4 class="title">Idiomas</h4>
-            <ul>
-                <li>
-                    <span class="text">Español (Nativo)</span>
-                </li>
-                <li>
-                    <span class="text">Ingles (B1)</span>
-                </li>
-            </ul>
-          </div>
-       </div>
-        
-       <div class="right_side">
-        <div class="about">
-            <h2 class="title2">Perfil</h2>
-            <p>
-                Soy un ingeniero en software graduado en la universidad Apec. Poseo habilidades para el desarrollo de software, manejo de sistemas  operativos y  seguridad  de  los mismo. 
+            <li class="entry">
+              <div class="meta">
+                <span class="ver">v2.0</span>
+                <span class="date">2023 — 2024</span>
+              </div>
+              <div class="body">
+                <h3>Junior Software Developer <span class="at">· Oriontek</span></h3>
+                <p data-l="es">
+                  Tres proyectos: Autoferia Popular, trabajando la base de datos en PostgreSQL; Thynkads, como desarrollador front-end con React y Bootstrap y parte del back-end con Node.js, ambos en TypeScript; y GAMALSAN, agregando funcionalidades en Flutter con Dart.
+                </p>
+                <p data-l="fr">
+                  Trois projets : Autoferia Popular, sur la base de données PostgreSQL ; Thynkads, comme développeur front-end avec React et Bootstrap et sur une partie du back-end en Node.js, le tout en TypeScript ; et GAMALSAN, en ajoutant des fonctionnalités avec Flutter et Dart.
+                </p>
+                <p data-l="pt">
+                  Três projetos: Autoferia Popular, trabalhando no banco de dados PostgreSQL; Thynkads, como desenvolvedor front-end com React e Bootstrap e parte do back-end com Node.js, ambos em TypeScript; e GAMALSAN, adicionando funcionalidades em Flutter com Dart.
+                </p>
+                <p data-l="en">
+                  Three projects: Autoferia Popular, working on its PostgreSQL database; Thynkads, as a front-end developer with React and Bootstrap plus part of the Node.js back-end, both in TypeScript; and GAMALSAN, adding features in Flutter with Dart.
+                </p>
+                <p class="stack">TypeScript · React · Node.js · PostgreSQL · Flutter</p>
+              </div>
+            </li>
 
-                <br><br> 
-                Tengo como objetivo aplicar mis conocimientos  en  la  empresa para desempeñar una función eficaz, que permita contribuir con el  desarrollo y  rentabilidad de la  misma,  así como también mi crecimiento personal y profesional.
-            </p>
-        </div>
-        <div class="about">
-            <h2 class="title2">Experiencia</h2>
-            <div class="box">
-                <div class="year_company">
-                    <br>
-                    <h5>2022 - 2023</h5>
-                    <h5>ALTERNA ACADEMY </h5>
-                    
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <h5>2023 - 2024</h5>
-                    <h5>Oriontek </h5>
+            <li class="entry">
+              <div class="meta">
+                <span class="ver">v1.0</span>
+                <span class="date">2022 — 2023</span>
+              </div>
+              <div class="body">
+                <h3>Junior Full Stack Developer <span class="at">· Alterna Academy</span></h3>
+                <p data-l="es">
+                  Programa intensivo de 6 meses: HTML, CSS, TypeScript, Python, React, bases de datos, diseño web, Linux y lógica de máquinas de estado.
+                </p>
+                <p data-l="fr">
+                  Programme intensif de 6 mois : HTML, CSS, TypeScript, Python, React, bases de données, design web, Linux et logique des machines à états.
+                </p>
+                <p data-l="pt">
+                  Programa intensivo de 6 meses: HTML, CSS, TypeScript, Python, React, bancos de dados, web design, Linux e lógica de máquinas de estado.
+                </p>
+                <p data-l="en">
+                  Six-month intensive program: HTML, CSS, TypeScript, Python, React, databases, web design, Linux and state-machine logic.
+                </p>
+                <p class="stack">HTML · CSS · TypeScript · Python · React</p>
+              </div>
+            </li>
+          </ol>
+        </section>
 
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <h5>2024 - Actualidad</h5>
-                    <h5>General de Seguros </h5>
-                </div>
-                <div class="text">
-                    <h4>Junior Full Stack Developer</h4>
-                    <p>Completé un entrenamiento de Junior Full Stack Developer de 6 meses. Aprendí los fundamentos de Html, Css, TypeScript, Python , React , bases de datos, diseño web, Linux y lógica de state machine. Estoy preparado para trabajar en proyectos de desarrollo web y contribuir al desarrollo de aplicaciones web complejas.</p>
-                    
-                    <br>
-                    <h4>Junior Software Developer</h4>
-                    <p>Durante mi experiencia laboral, he trabajado dos proyectos: Autoferia Popular en la base de datos PostgreSQL y Thynkads como desarrollador front-end con React, Bootstrap y parte de backend con Node.js. En ambos casos usando TypeScript. Por último, GAMALSAN trabaje con Flutter agregando funcionalidades utilizando Dart.
-                    </p>
+      </div>
 
-                    <br>
-                    <h4>Web Developer</h4>
-                    <p>Durante mi experiencia laboral, he trabajado en el proyecto GSWEB, desempeñándome principalmente como desarrollador front-end. He realizado el desarrollo de landing pages, la página para cambiar contraseña, páginas de productos y he mejorado las plantillas ya existentes de otros productos, entre otras tareas. Las herramientas que utilicé fueron React, TypeScript y Tailwind. En el back-end, implementé APIs utilizando el modelo MVC con C# y consultando la base de datos mediante procedimientos almacenados en SQL Server.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="about skills">
-            <h2 class="title2">Habilidades</h2>
-            <div class="box">
-                <h4>Html</h4>
-                <h4>Css</h4>
-            </div>
-            <div class="box">
-                <h4>React</h4>
-                <h4>Flutter</h4>
-            </div>
-            <div class="box">
-                <h4>TypeScript</h4>
-                <h4>JavaScript</h4>
-            </div>
-            <div class="box">
-                <h4>Python</h4>
-                <h4>Dart</h4>
-            </div>
-            <div class="box">
-                <h4>C#</h4>
-                <h4>SQL</h4>
-            </div>
-            <div class="box">
-                <h4>Linux</h4>
-                <h4>Bootstrap</h4>
-            </div>
-            <div class="box">
-                <h4>GIT</h4>
-                <h4>Github</h4>
-            </div>
-            <div class="box">
-                <h4>Gitlab</h4>
-                <h4>Office 365</h4>
-            </div>
-        </div>
-        
-        <div class="about interest">
-         <h2 class="title2">Afición</h2>
-         <ul>
-             <li><i class="fa fa-terminal" aria-hidden="true"></i></i>Programar</li>
-             <li><i class="fa fa-laptop" aria-hidden="true"></i>Tecnología</li>
-             <li><i class="fa fa-book" aria-hidden="true"></i>Leer</li>
-             <li><i class="fa fa-television" aria-hidden="true"></i>Multimedia</li>
-         </ul>
-        </div>
-       </div>
+      <aside class="side">
 
+        <section>
+          <h2 class="sec"><span class="n">03</span><span data-l="es">Educación</span><span data-l="fr">Formation</span><span data-l="pt">Formação</span><span data-l="en">Education</span></h2>
+          <dl class="edu">
+            <div>
+              <dt>2018 — 2023</dt>
+              <dd>
+                <strong><span data-l="es">Ingeniería en Software</span><span data-l="fr">Diplôme d'ingénieur logiciel</span><span data-l="pt">Engenharia de Software</span><span data-l="en">B.S. in Software Engineering</span></strong>
+                Universidad APEC
+              </dd>
+            </div>
+            <div>
+              <dt>2016 — 2018</dt>
+              <dd>
+                <strong><span data-l="es">Bachiller Técnico en Electrónica</span><span data-l="fr">Baccalauréat technique en électronique</span><span data-l="pt">Ensino Médio Técnico em Eletrônica</span><span data-l="en">Technical Diploma in Electronics</span></strong>
+                Colegio APEC Fernando Arturo de Meriño
+              </dd>
+            </div>
+          </dl>
+        </section>
 
-   </div>  
+        <section>
+          <h2 class="sec"><span class="n">04</span><span data-l="es">Habilidades</span><span data-l="fr">Compétences</span><span data-l="pt">Habilidades</span><span data-l="en">Skills</span></h2>
+          <dl class="skills">
+            <div><dt>Front-end</dt><dd>React, TypeScript, JavaScript, HTML, CSS, Tailwind, Bootstrap</dd></div>
+            <div><dt>Back-end</dt><dd>C# (MVC), Node.js, Python</dd></div>
+            <div><dt><span data-l="es">Datos</span><span data-l="fr">Données</span><span data-l="pt">Dados</span><span data-l="en">Data</span></dt><dd>SQL Server, PostgreSQL</dd></div>
+            <div><dt>Mobile</dt><dd>Flutter, Dart</dd></div>
+            <div><dt><span data-l="es">Agentes de IA</span><span data-l="fr">Agents IA</span><span data-l="pt">Agentes de IA</span><span data-l="en">AI agents</span></dt><dd>Claude Code, Antigravity, ChatGPT Codex</dd></div>
+            <div><dt><span data-l="es">Herramientas</span><span data-l="fr">Outils</span><span data-l="pt">Ferramentas</span><span data-l="en">Tools</span></dt><dd>Git, GitHub, GitLab, Linux, Office 365</dd></div>
+          </dl>
+        </section>
+
+        <section>
+          <h2 class="sec"><span class="n">05</span><span data-l="es">Idiomas</span><span data-l="fr">Langues</span><span data-l="pt">Idiomas</span><span data-l="en">Languages</span></h2>
+          <ul class="langs">
+            <li><span data-l="es">Español</span><span data-l="fr">Espagnol</span><span data-l="pt">Espanhol</span><span data-l="en">Spanish</span> <span class="lvl"><span data-l="es">Nativo</span><span data-l="fr">Natif</span><span data-l="pt">Nativo</span><span data-l="en">Native</span></span></li>
+            <li><span data-l="es">Inglés</span><span data-l="fr">Anglais</span><span data-l="pt">Inglês</span><span data-l="en">English</span> <span class="lvl">B1</span></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="sec"><span class="n">06</span><span data-l="es">En línea</span><span data-l="fr">En ligne</span><span data-l="pt">Online</span><span data-l="en">Online</span></h2>
+          <ul class="links">
+            <!-- Portafolio oculto hasta que esté listo:
+            <li><a href="https://codepen.io/JDSS/full/eYyoaLe" target="_blank" rel="noopener"><span data-l="es">Portafolio</span><span data-l="fr">Portfolio</span><span data-l="pt">Portfólio</span><span data-l="en">Portfolio</span></a></li>
+            -->
+            <li><a href="https://github.com/DavidSuriel" target="_blank" rel="noopener">GitHub <span>/DavidSuriel</span></a></li>
+            <li><a href="https://www.freecodecamp.org/JDSS62" target="_blank" rel="noopener">freeCodeCamp <span>/JDSS62</span></a></li>
+            <li><a href="https://twitter.com/JDSS04243778" target="_blank" rel="noopener">X / Twitter <span>@JDSS04243778</span></a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="sec"><span class="n">07</span><span data-l="es">Intereses</span><span data-l="fr">Centres d'intérêt</span><span data-l="pt">Interesses</span><span data-l="en">Interests</span></h2>
+          <p class="interests" data-l="es">Programar, tecnología, lectura y multimedia.</p>
+          <p class="interests" data-l="fr">Programmation, technologie, lecture et multimédia.</p>
+          <p class="interests" data-l="pt">Programação, tecnologia, leitura e multimídia.</p>
+          <p class="interests" data-l="en">Programming, technology, reading and media.</p>
+        </section>
+
+      </aside>
+    </div>
+
+  </main>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var buttons = document.querySelectorAll('[data-set-lang]');
+      var langs = ['es', 'fr', 'pt', 'en'];
+
+      function setLang(lang) {
+        root.lang = lang;
+        buttons.forEach(function (b) {
+          b.setAttribute('aria-pressed', String(b.dataset.setLang === lang));
+        });
+        try { localStorage.setItem('cv-lang', lang); } catch (e) {}
+      }
+
+      var saved = null;
+      try { saved = localStorage.getItem('cv-lang'); } catch (e) {}
+      var fromUrl = new URLSearchParams(location.search).get('lang');
+      var initial = [fromUrl, saved].filter(function (l) { return langs.indexOf(l) !== -1; })[0];
+      setLang(initial || 'es');
+
+      buttons.forEach(function (b) {
+        b.addEventListener('click', function () { setLang(b.dataset.setLang); });
+      });
+
+      // Escala la hoja A4 (210mm ≈ 794px) al ancho de la ventana
+      var SHEET_PX = 793.7, MAX_ZOOM = 1.6;
+      function fit() {
+        var w = root.clientWidth;
+        var gutter = w <= 600 ? 16 : 96;
+        var z = Math.min((w - gutter) / SHEET_PX, MAX_ZOOM);
+        root.style.setProperty('--z', z.toFixed(4));
+      }
+      fit();
+      window.addEventListener('resize', fit);
+
+      // El nombre del PDF lo toma el navegador del <title>
+      document.getElementById('download').addEventListener('click', function () {
+        var original = document.title;
+        document.title = 'CV-Jose-David-Sanchez-Suriel-' + root.lang.toUpperCase();
+        var go = function () {
+          window.print();
+          setTimeout(function () { document.title = original; }, 500);
+        };
+        document.fonts && document.fonts.ready ? document.fonts.ready.then(go) : go();
+      });
+    })();
+  </script>
 </body>
 </html>
