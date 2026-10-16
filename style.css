@@ -347,10 +347,13 @@ section + section { margin-top: 5.5mm; }
 
 /* ---------- Escala en pantalla ----------
    La hoja conserva su diseño A4 en cualquier pantalla: el script
-   calcula --z para que ocupe el ancho disponible (más chica en
-   móvil, más grande en monitores anchos). */
+   calcula --z: en móvil ocupa el ancho; en tablet, desktop y
+   monitores grandes la hoja completa cabe en la ventana. */
 
 .sheet { zoom: var(--z, 1); }
+
+/* La hoja entera cabe en la ventana: menos aire abajo */
+.fit-whole body { padding-bottom: 24px; }
 
 @media screen and (max-width: 600px) {
   body { padding: 68px 8px 24px; }

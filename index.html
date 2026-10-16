@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
@@ -267,12 +267,17 @@
         b.addEventListener('click', function () { setLang(b.dataset.setLang); });
       });
 
-      // Escala la hoja A4 (210mm ≈ 794px) al ancho de la ventana
-      var SHEET_PX = 793.7, MAX_ZOOM = 1.6;
+      // Escala la hoja A4 (210 × 297 mm ≈ 794 × 1123 px). En móvil ocupa el
+      // ancho; en tablet, desktop y monitores grandes cabe completa en la
+      // ventana, sin tener que hacer scroll.
+      var SHEET_W = 793.7, SHEET_H = 1122.5, MAX_ZOOM = 1.6;
       function fit() {
-        var w = root.clientWidth;
-        var gutter = w <= 600 ? 16 : 96;
-        var z = Math.min((w - gutter) / SHEET_PX, MAX_ZOOM);
+        var w = root.clientWidth, h = window.innerHeight;
+        var byWidth = (w - (w <= 600 ? 16 : 96)) / SHEET_W;
+        var byHeight = (h - 72 - 24) / SHEET_H;
+        var whole = w > 600 && byHeight >= 0.45;
+        root.classList.toggle('fit-whole', whole);
+        var z = Math.min(whole ? Math.min(byWidth, byHeight) : byWidth, MAX_ZOOM);
         root.style.setProperty('--z', z.toFixed(4));
       }
       fit();
